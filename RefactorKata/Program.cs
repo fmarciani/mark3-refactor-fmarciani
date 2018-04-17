@@ -4,6 +4,11 @@ using System.Data.SqlClient;
 
 namespace RefactorKata
 {
+    public class Product
+    {
+        public string Name { get; set; }
+    }
+
     class Program
     {
         static void Main(string[] args)
