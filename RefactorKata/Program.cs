@@ -20,8 +20,7 @@ namespace RefactorKata
 
                 while (reader.Read())
                 {
-                    var prod = new Product();
-                    prod.Name = reader["Name"].ToString();
+                    var prod = new Product() { Name = reader["Name"].ToString() };
                     products.Add(prod);
                 }
             }
